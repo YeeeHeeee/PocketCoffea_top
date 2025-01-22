@@ -39,7 +39,11 @@ The user can customize the process from the confguration file or by redefining w
 - A set of tutorials is available at: https://github.com/PocketCoffea/Tutorials
 
 - Complete analyses examples
-  - Z->ee **[analysis example page](https://pocketcoffea.readthedocs.io/en/latest/analysis_example.html)** 
+  - Z->ee **[analysis example page](https://pocketcoffea.readthedocs.io/en/latest/analysis_example.html)**
+ 
+ ## Activate the environment:
+source /cvmfs/sft.cern.ch/lcg/views/LCG_103/x86_64-centos7-gcc11-opt/setup.sh
+source myenv/bin/activate
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
 
