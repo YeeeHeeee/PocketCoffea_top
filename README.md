@@ -46,6 +46,17 @@ The user can customize the process from the confguration file or by redefining w
 micromamba activate pocket-coffea
 ```
 
+## Check the certificate 
+on lx06:
+```bash
+source /vols/grid/cms/setup.sh
+voms-proxy-init --rfc --voms cms -valid 192:00
+```
+on lxplus:
+```bash
+voms-proxy-init --rfc --voms cms -valid 192:00
+```
+
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
 
