@@ -42,7 +42,10 @@ The user can customize the process from the confguration file or by redefining w
   - Z->ee **[analysis example page](https://pocketcoffea.readthedocs.io/en/latest/analysis_example.html)**
  
  ## Activate the environment:
+ ```bash
 micromamba activate pocket-coffea
+```
+
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
 
