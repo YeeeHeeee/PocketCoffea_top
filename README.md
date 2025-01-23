@@ -57,6 +57,13 @@ on lxplus:
 voms-proxy-init --rfc --voms cms -valid 192:00
 ```
 
+## Find the sample
+```bash
+dasgoclient -query="dataset dataset=/SUSYGluGluToHToTauTau*/*102X*/MINIAODSIM"
+```
+ the first section is of the dataset name, is the typical physics process name, the second part is the CMS software used to produce the file and the the final part is the data tier (MiniAOD/NanoAOD)
+
+
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
 
