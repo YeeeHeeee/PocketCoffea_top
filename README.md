@@ -61,7 +61,7 @@ voms-proxy-init --rfc --voms cms -valid 192:00
 ```bash
 dasgoclient -query="dataset dataset=/SUSYGluGluToHToTauTau*/*102X*/MINIAODSIM"
 ```
- the first section is of the dataset name, is the typical physics process name, the second part is the CMS software used to produce the file and the the final part is the data tier (MiniAOD/NanoAOD)
+The first section is of the dataset name, is the typical physics process name, the second part is the CMS software used to produce the file and the the final part is the data tier (MiniAOD/NanoAOD). 102X: major version 10, minor version 2 and any revision version.
 
 
   
