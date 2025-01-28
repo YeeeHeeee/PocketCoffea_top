@@ -63,6 +63,29 @@ dasgoclient -query="dataset dataset=/SUSYGluGluToHToTauTau*/*102X*/MINIAODSIM"
 ```
 The first section is of the dataset name, is the typical physics process name, the second part is the CMS software used to produce the file and the the final part is the data tier (MiniAOD/NanoAOD). 102X: major version 10, minor version 2 and any revision version.
 
+## Run the codes
+A bit too detailed of the directory:
+```bash
+./pocket_coffea/scripts/runner.py --cfg /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/example_config.py --full -o /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/output_v1
+```
+# Usseful Comments:
+1. Find a file:
+    ```bash
+    find . -name "build_datasets.py"
+    ```
+2. Grant execute permission:
+   ```bash
+   chmod +x ./pocket_coffea/scripts/dataset/build_datasets.py
+   ```
+3. Check environment paths:
+   ```bash
+   micromamba env list
+   ```
+4. Check the roots file existance
+    ```bash
+    xrdfs root://cmsdcadisk.fnal.gov
+    ls /dcache/uscmsdisk/store/data/Run2018D/SingleMuon/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v1/280000/
+    ```   
 
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
