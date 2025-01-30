@@ -68,7 +68,7 @@ A bit too detailed of the directory:
 ```bash
 ./pocket_coffea/scripts/runner.py --cfg /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/example_config.py --full -o /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/output_v1
 ```
-# Usseful Comments:
+# Useful Comments:
 1. Find a file:
     ```bash
     find . -name "build_datasets.py"
@@ -85,7 +85,11 @@ A bit too detailed of the directory:
     ```bash
     xrdfs root://cmsdcadisk.fnal.gov
     ls /dcache/uscmsdisk/store/data/Run2018D/SingleMuon/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v1/280000/
-    ```   
+    ```
+5. Check the path of the library
+   ```bash
+    python -c "import coffea.processor; print(coffea.processor.__file__)"
+    ```
 
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
