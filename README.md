@@ -90,6 +90,10 @@ A bit too detailed of the directory:
    ```bash
     python -c "import coffea.processor; print(coffea.processor.__file__)"
     ```
+6. Remove jobs before submit to Condor
+   ```bash
+   rm -r ./jobs-dir/job
+   ```
 
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
