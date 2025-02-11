@@ -35,6 +35,7 @@ For submitting to condor, the data are splitted to be proessed. Then it loses th
 ```bash
 pocket-coffea merge-outputs -o output_condor/output_all.coffea -jc jobs-dir/job/jobs_config.yaml output_condor/output_job_*.coffea
 ```
+To skip the missing files, added ```bash --ignore-missing```
 
 ### Plots 
 ```bash
@@ -73,7 +74,10 @@ pocket-coffea make-plots -i output_all.coffea --cfg parameters_dump.yaml -o plot
    ```bash
    rm -r ./jobs-dir/job
    ```
-
+7. Count files:
+   ```bash
+   ls output_condor/output_job_*.coffea | wc -l
+   ```
   
 - [Join](https://mattermost.web.cern.ch/cms-exp/channels/pocketcoffea---qa) the Q&A CMS Mattermost channel for technical questions
 
