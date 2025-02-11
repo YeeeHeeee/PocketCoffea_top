@@ -40,12 +40,18 @@ The user can customize the process from the confguration file or by redefining w
 
 - Complete analyses examples
   - Z->ee **[analysis example page](https://pocketcoffea.readthedocs.io/en/latest/analysis_example.html)**
+
+ # Workflow Commands:
+ Build datasets metadata - Run the processor - Plot
+    ### Activate the environment:
+     ```bash
+    micromamba activate pocket-coffea
+    ```
  
  ## Activate the environment:
  ```bash
 micromamba activate pocket-coffea
 ```
-
 ## Check the certificate 
 on lx06:
 ```bash
@@ -66,9 +72,9 @@ The first section is of the dataset name, is the typical physics process name, t
 ## Run the codes
 A bit too detailed of the directory:
 ```bash
-./pocket_coffea/scripts/runner.py --cfg /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/example_config.py --full -o /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/output_v1
+pocket-coffea run --cfg /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/example_config.py --full -o /vols/cms/yhe4823/PocketCoffea_top/AnalysisConfigs/configs/zmumu/output_v1
 ```
-# Useful Comments:
+# Useful Commands:
 1. Find a file:
     ```bash
     find . -name "build_datasets.py"
