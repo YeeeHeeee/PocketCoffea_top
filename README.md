@@ -35,13 +35,14 @@ For submitting to condor, the data are splitted to be proessed. Then it loses th
 ```bash
 pocket-coffea merge-outputs -o output_condor/output_all.coffea -jc jobs-dir/job/jobs_config.yaml output_condor/output_job_*.coffea
 ```
-To skip the missing files, added ```--ignore-missing```
+To skip the missing files, add ```--ignore-missing```
 
 ### Plots 
 ```bash
 cd output_condor
-pocket-coffea make-plots -i output_all.coffea --cfg parameters_dump.yaml -o plots -op plotting_style.yaml
+pocket-coffea make-plots -i output_all.coffea --cfg parameters_dump.yaml -o plots
 ```
+To customise the plotting style, add ```-op plotting_style.yaml```
 
 ### Check the condor availability:
 ```bash
