@@ -35,7 +35,7 @@ For submitting to condor, the data are splitted to be proessed. Then it loses th
 ```bash
 pocket-coffea merge-outputs -o output_condor/output_all.coffea -jc jobs-dir/job/jobs_config.yaml output_condor/output_job_*.coffea
 ```
-To skip the missing files, added ```bash --ignore-missing```
+To skip the missing files, added ```--ignore-missing```
 
 ### Plots 
 ```bash
