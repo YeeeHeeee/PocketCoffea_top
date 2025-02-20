@@ -15,6 +15,11 @@ on lxplus:
 ```bash
 voms-proxy-init --rfc --voms cms -valid 192:00
 ```
+### Build Dataset:
+```bash
+pocket-coffea build-datasets --cfg datasets/datasets_definitions.json -o
+```
+
 ### Find the sample:
 ```bash
 dasgoclient -query="dataset dataset=/SUSYGluGluToHToTauTau*/*102X*/MINIAODSIM"
